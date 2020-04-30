@@ -3,9 +3,7 @@ var socket = require('socket.io');
 
 var app = express();
 
-var server = app.listen(process.env.PORT,function(){
-    console.log('Server is running on port 8000');
-});
+var server = app.listen(process.env.PORT);
 
 app.use(express.static('public'));
 

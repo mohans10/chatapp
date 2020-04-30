@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:process.env.PORTgit');
+var socket = io.connect('http://localhost:process.env.PORT');
 
 var output = document.getElementById('output');
 var handler = document.getElementById('handle');
