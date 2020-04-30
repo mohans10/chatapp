@@ -30,6 +30,10 @@ msg.addEventListener('keypress',function(){
     socket.emit('typing',handler.value);
 });
 
+msg.addEventListener('touchend',function(){
+    socket.emit('typing',handler.value);
+});
+
 socket.on('typing',function(data){
     if(data!=""){
         feed.innerHTML = '<p><em>'+data+' is typing...</em></p>';
