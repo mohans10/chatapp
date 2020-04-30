@@ -30,7 +30,7 @@ msg.addEventListener('keypress',function(){
     socket.emit('typing',handler.value);
 });
 
-msg.addEventListener('touchend',function(){
+msg.addEventListener('keyup touchend',function(){
     socket.emit('typing',handler.value);
 });
 
