@@ -1,0 +1,21 @@
+#maindiv{ margin-top: 20px; width: 400px; background-color: rgb(65, 62, 62); margin-left: 30%; color: red; border: black solid 2px;}
+
+#chatspace{ height: auto; background-color: blanchedalmond; color: black; text-align: left; }
+
+#handle{ width: 150px; border: 2px solid green; top: 120px; right: 300px; text-align: center;}
+
+#message{ height: 40px; width: 350px; border: 2px solid green; top: 150px; right: 190px;}
+
+#send{ background-color: chartreuse; color: black; top: 200px; right: 350px;}
+
+#log{ background-color:rgb(155, 155, 241); color: black; top: 120px; right: 230px;}
+
+#bar{ color: black; background-color: whitesmoke;  margin-left: 50px;}
+
+#feed{ text-align: center;}
+
+.move{ position: fixed;}
+
+#info{ text-align: center; background-color: rgb(243, 188, 188); height: 300px; width: 200px; top: 100px; left: 100px;}
+
+#label{ color: black;}

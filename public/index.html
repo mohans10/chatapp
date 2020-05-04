@@ -1,29 +1,25 @@
 <html>
         <head><title>ChatApp</title>
-                
+                <link rel="stylesheet" type="text/css" href="mystyle.css">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
                 
         </head>
         
-        <body><style>
-                #maindiv{ width: 400px; align-self: center; background-color: rgb(65, 62, 62); margin-left: 30%; color: red;}
-                #chatspace{ height: 600px; background-color: blanchedalmond; color: black; text-align: left;}
-                #handle{ width: 150px; border: 2px solid green;}
-                #message{ height: 40px; width: 350px; border: 2px solid green;}
-                #send{ background-color: chartreuse; color: black;}
-                #bar{ color: black; background-color: whitesmoke;  margin-left: 50px;}
-                #feed{ text-align: center;}
-        </style>
-
+        <body>
                 <div id="maindiv" align="center">
                         <h2>ChatApp</h2>
                         <div id="chatspace">
                                 <div id="feed"></div>
                                 <div id="output"></div>
                         </div>
-                        <input id="handle" type="text" placeholder=" Your name"/>
-                        <input id="message" type="text" placeholder=" Type your message"/>
-                        <button id="send">Send</button>
+                        <input id="handle" class="move" type="text" placeholder=" Your name"/>
+                        <input id="message" class="move" type="text" placeholder=" Type your message"/>
+                        <button id="send" class="move">Send</button>
+                        <button id="log" class="move">Login</button>
+                        <div id="info" class="move">
+                                <p id="label"><u>Online Members</u></p>
+
+                        </div>
                 </div>
         </body>
         <script src="chat.js"></script>
