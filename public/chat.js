@@ -1,4 +1,5 @@
-var socket = io.connect('https://app4chat.herokuapp.com/');
+//var socket = io.connect('https://app4chat.herokuapp.com/');
+var socket = io.connect('https://localhost:4000');
 
 var output = document.getElementById('output');
 var handler = document.getElementById('handle');
@@ -29,10 +30,10 @@ socket.on('chat',function(data){
 msg.addEventListener('keypress',function(){
     socket.emit('typing',handler.value);
 });
-
+/*
 msg.addEventListener('keyup',function(){
     socket.emit('typing',handler.value);
-});
+});*/
 
 socket.on('typing',function(data){
     if(data!=""){
